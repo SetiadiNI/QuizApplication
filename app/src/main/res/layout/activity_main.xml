@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Manahkah di antara nama-nama berikut yang merupakan khulafa ur rasyidin?"
+        android:textColor="#030303" />
+
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Abu Bakar As-Sidiq"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/c1"
+        android:layout_below="@+id/c1"
+        android:text="Abu Jahal"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/c2"
+        android:layout_below="@+id/c2"
+        android:text="Imam Muslim"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/c3"
+        android:layout_below="@+id/c3"
+        android:text="Imam Bukhari"
+        android:checked="false" />
+
+    <Button
+        android:id="@+id/proses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/c4"
+        android:layout_alignRight="@+id/c3"
+        android:layout_below="@+id/c4"
+        android:layout_marginTop="17dp"
+        android:text="proses" />
+
+</RelativeLayout>
